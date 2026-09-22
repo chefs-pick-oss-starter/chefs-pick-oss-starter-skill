@@ -7,7 +7,7 @@ The snapshot is the template's current published content. It is the only source 
 1. Clone the template's default branch into a temporary directory:
 
    ```sh
-   git clone --depth 1 https://github.com/anyingiit/chefs-pick-oss-starter <temporary-directory>
+   git clone --depth 1 https://github.com/chefs-pick-oss-starter/chefs-pick-oss-starter <temporary-directory>
    ```
 
    The default branch is the current published version. Do not fetch a tag instead.

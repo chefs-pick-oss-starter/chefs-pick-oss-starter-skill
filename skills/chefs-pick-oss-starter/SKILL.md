@@ -5,7 +5,7 @@ license: MIT
 compatibility: Requires git and read access to github.com. The GitHub CLI (gh), signed in, is optional and only used for repository settings the user approves one by one.
 metadata:
   min-template-version: "1.1.0"
-  template-repository: "https://github.com/anyingiit/chefs-pick-oss-starter"
+  template-repository: "https://github.com/chefs-pick-oss-starter/chefs-pick-oss-starter"
 ---
 
 # Chef's Pick OSS Starter

@@ -12,7 +12,7 @@ An agent skill that creates a repository from the Chef's Pick OSS Starter templa
 
 ## What it is
 
-An [Agent Skills](https://agentskills.io/specification) package that lets a coding agent do the [Chef's Pick OSS Starter](https://github.com/anyingiit/chefs-pick-oss-starter) setup for you. It works in two modes:
+An [Agent Skills](https://agentskills.io/specification) package that lets a coding agent do the [Chef's Pick OSS Starter](https://github.com/chefs-pick-oss-starter/chefs-pick-oss-starter) setup for you. It works in two modes:
 
 - **Create**: make a new repository from the template, fill in your project's identity, walk the setup checklist and remove the template's guide layer.
 - **Align**: bring an existing repository to the template's recommended form. The repository may never have used the template, or it may have been made from an older version of it.
@@ -56,7 +56,7 @@ Ask your agent in plain words, for example:
 - `Create a new repository called hello-world with Chef's Pick.`
 - `Align this repository with Chef's Pick.`
 
-You do not have to install anything to try it once: copy the prompt from the "Set up with an agent" section of the [template's front page](https://github.com/anyingiit/chefs-pick-oss-starter/blob/main/.github/README.md) into your agent instead.
+You do not have to install anything to try it once: copy the prompt from the "Set up with an agent" section of the [template's front page](https://github.com/chefs-pick-oss-starter/chefs-pick-oss-starter/blob/main/.github/README.md) into your agent instead.
 
 ## Compatibility
 
@@ -70,7 +70,7 @@ In Codex, network access is off by default. Allow it before running the skill, f
 
 ## Template versions
 
-Works with Chef's Pick OSS Starter 1.1.0 and later. The template lives at <https://github.com/anyingiit/chefs-pick-oss-starter>.
+Works with Chef's Pick OSS Starter 1.1.0 and later. The template lives at <https://github.com/chefs-pick-oss-starter/chefs-pick-oss-starter>.
 
 ## Contributing
 

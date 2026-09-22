@@ -25,7 +25,7 @@ Use the first of these that applies.
 - **The user wants the repository on GitHub, and `gh auth status` succeeds.** Ask the user for the owner, the name and the visibility, and get their approval to create the repository on GitHub. This is a remote operation, so it needs its own approval. Then run:
 
   ```sh
-  gh repo create <owner>/<name> --template anyingiit/chefs-pick-oss-starter --clone --<visibility>
+  gh repo create <owner>/<name> --template chefs-pick-oss-starter/chefs-pick-oss-starter --clone --<visibility>
   ```
 
   Afterwards, confirm the clone is on `main`.

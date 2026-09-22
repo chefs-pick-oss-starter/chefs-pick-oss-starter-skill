@@ -1,0 +1,16 @@
+{
+  "name": "chefs-pick",
+  "owner": {
+    "name": "Chef's Pick OSS Starter contributors"
+  },
+  "plugins": [
+    {
+      "name": "chefs-pick-oss-starter",
+      "source": "./",
+      "description": "Create a new open source repository from the Chef's Pick OSS Starter template, or align an existing repository with it.",
+      "license": "MIT",
+      "strict": false,
+      "skills": ["./skills/chefs-pick-oss-starter"]
+    }
+  ]
+}

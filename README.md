@@ -5,10 +5,10 @@
 
 An agent skill that creates a repository from the Chef's Pick OSS Starter template, or aligns an existing repository with it.
 
-[![CI](https://github.com/anyingiit/chefs-pick-oss-starter-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/anyingiit/chefs-pick-oss-starter-skill/actions/workflows/ci.yml)
-[![License](https://img.shields.io/github/license/anyingiit/chefs-pick-oss-starter-skill)](LICENSE)
+[![CI](https://github.com/chefs-pick-oss-starter/chefs-pick-oss-starter-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/chefs-pick-oss-starter/chefs-pick-oss-starter-skill/actions/workflows/ci.yml)
+[![License](https://img.shields.io/github/license/chefs-pick-oss-starter/chefs-pick-oss-starter-skill)](LICENSE)
 
-[Report a bug](https://github.com/anyingiit/chefs-pick-oss-starter-skill/issues/new?template=bug_report.yml) · [Request a feature](https://github.com/anyingiit/chefs-pick-oss-starter-skill/issues/new?template=feature_request.yml)
+[Report a bug](https://github.com/chefs-pick-oss-starter/chefs-pick-oss-starter-skill/issues/new?template=bug_report.yml) · [Request a feature](https://github.com/chefs-pick-oss-starter/chefs-pick-oss-starter-skill/issues/new?template=feature_request.yml)
 
 ## What it is
 
@@ -24,14 +24,14 @@ The agent fetches the template's current content on every run, shows you the ful
 Install it once for all your repositories with the [skills CLI](https://github.com/vercel-labs/skills). It detects which of the agents below you have:
 
 ```sh
-npx skills add anyingiit/chefs-pick-oss-starter-skill -g
+npx skills add chefs-pick-oss-starter/chefs-pick-oss-starter-skill -g
 ```
 
 Or use your agent's own way of installing skills:
 
 | Agent | Install |
 |---|---|
-| Claude Code | `/plugin marketplace add anyingiit/chefs-pick-oss-starter-skill`, then `/plugin install chefs-pick-oss-starter@chefs-pick` |
+| Claude Code | `/plugin marketplace add chefs-pick-oss-starter/chefs-pick-oss-starter-skill`, then `/plugin install chefs-pick-oss-starter@chefs-pick` |
 | OpenAI Codex | Copy `skills/chefs-pick-oss-starter` into `~/.agents/skills/` |
 | OpenCode | Copy `skills/chefs-pick-oss-starter` into `~/.config/opencode/skills/` |
 
@@ -84,6 +84,6 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ## Contact
 
-Project link: [https://github.com/anyingiit/chefs-pick-oss-starter-skill](https://github.com/anyingiit/chefs-pick-oss-starter-skill)
+Project link: [https://github.com/chefs-pick-oss-starter/chefs-pick-oss-starter-skill](https://github.com/chefs-pick-oss-starter/chefs-pick-oss-starter-skill)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

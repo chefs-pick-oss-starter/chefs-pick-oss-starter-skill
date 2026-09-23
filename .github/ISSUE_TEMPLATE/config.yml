@@ -2,8 +2,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Questions and help
-    url: https://github.com/anyingiit/chefs-pick-oss-starter-skill/discussions
+    url: https://github.com/chefs-pick-oss-starter/chefs-pick-oss-starter-skill/discussions
     about: Please ask and answer questions in GitHub Discussions.
   - name: Report a security vulnerability
-    url: https://github.com/anyingiit/chefs-pick-oss-starter-skill/security/advisories/new
+    url: https://github.com/chefs-pick-oss-starter/chefs-pick-oss-starter-skill/security/advisories/new
     about: Please report security vulnerabilities privately, not in public issues.

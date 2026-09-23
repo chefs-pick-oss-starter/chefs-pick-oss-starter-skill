@@ -39,7 +39,7 @@ Smaller, focused pull requests are easier to review and get merged sooner than l
 
 ## Development setup
 
-See [Getting started](README.md#getting-started) for how to install the dependencies and run the project locally.
+The skill is plain Markdown and needs no build. See [Install](README.md#install) to try your change in an agent, and check the package with the [Agent Skills validator](https://github.com/agentskills/agentskills/tree/main/skills-ref) (`skills-ref validate skills/chefs-pick-oss-starter`) before opening a pull request.
 
 ## Questions
 

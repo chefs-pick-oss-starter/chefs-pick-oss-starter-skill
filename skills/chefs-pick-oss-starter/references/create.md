@@ -12,9 +12,9 @@ The same applies when the repository is to be created on GitHub and the name is 
 
 ## 2. Agree the plan
 
-Before creating anything, gather every answer the plan depends on. That means the identity values from the placeholder table in the snapshot's `.github/chefs-pick/SETUP.md`, the project's language (for S06), a keep-or-remove decision for each optional module, whether to create the repository on GitHub, and whether each commit may be pushed. Where you can, infer a value first, for example the owner and name from the git remote or the copyright holder from `git config user.name`. Show each inferred value for confirmation, and ask for anything you cannot infer.
+Before creating anything, gather every answer the plan depends on. That means the identity values from the placeholder table in the snapshot's `.github/chefs-pick/SETUP.md`, the project's language (for S06), a keep-or-remove decision for each recommended and each optional module (S07 asks for both; required modules always stay), whether to create the repository on GitHub, and whether each commit may be pushed. Where you can, infer a value first, for example the owner and name from the git remote or the copyright holder from `git config user.name`. Show each inferred value for confirmation, and ask for anything you cannot infer.
 
-Then show the complete plan once and take the user's approval before any step below. A removed optional module needs no placeholder replacement, so leave its placeholders out of the plan.
+Then show the complete plan once and take the user's approval before any step below. A module the user removes needs no placeholder replacement, so leave its placeholders out of the plan.
 
 ## 3. Create
 
@@ -30,15 +30,17 @@ Use the first of these that applies.
 
   Afterwards, confirm the clone is on `main`.
 
+- **The user wants the repository on GitHub, but `gh auth status` fails.** Do not fall back to a local repository on your own. Tell the user that the GitHub CLI is not signed in, and offer two choices: they sign in themselves (never run `gh auth login` for them) and ask again, or they explicitly approve creating a local repository instead, which changes the plan. Wait for their answer.
+
 - **The target is a clone of an existing empty GitHub repository** (it has an `origin` remote and no commits). Do not run `gh repo create`. Switch the empty clone to `main` first (`git symbolic-ref HEAD refs/heads/main`), then copy the snapshot's file tree into it, leaving out the snapshot's own `.git`, and commit once with the message `Initial commit`. Pushing is a separate remote operation that needs its own approval.
 
-- **Otherwise.** Copy the snapshot's file tree into the target, leaving out the snapshot's own `.git`. Run `git init -b main` and commit once with the message `Initial commit`.
+- **Otherwise** (the user wants a local repository only). Copy the snapshot's file tree into the target, leaving out the snapshot's own `.git`. Run `git init -b main` and commit once with the message `Initial commit`.
 
 A repository made from the template on GitHub also starts with exactly one commit. Keeping that shape means the template-version tracing described in the snapshot's module guide still works.
 
 ## 4. Fill in the project identity
 
-Replace the placeholders in the files the placeholder table lists, using the values agreed in step 2. Remove the optional modules the user declined. Commit the result with the message `chore: fill in project identity`. Pushing that commit is a separate remote operation and needs its own approval.
+Replace the placeholders in the files the placeholder table lists, using the values agreed in step 2. Remove the files of every recommended or optional module the user declined, following the "Remove" notes in the snapshot's `.github/chefs-pick/GUIDE.md`. Commit the result with the message `chore: fill in project identity`. Pushing that commit is a separate remote operation and needs its own approval.
 
 ## 5. Walk the local steps
 

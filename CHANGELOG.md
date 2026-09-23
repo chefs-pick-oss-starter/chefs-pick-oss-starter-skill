@@ -8,6 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.3] - 2026-09-23
+
+### Fixed
+
+- Create mode no longer falls back to a local repository on its own when the user asked for GitHub and the GitHub CLI is not signed in; it asks the user to sign in or to approve a local repository instead.
+- Create mode now asks for a keep-or-remove decision on every recommended module as well as every optional one, as the template's setup step S07 requires.
+- CONTRIBUTING pointed at a README section that does not exist; it now points at Install and the Agent Skills validator.
+
 ## [1.0.2] - 2026-09-23
 
 ### Changed
@@ -26,7 +34,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - The chefs-pick-oss-starter skill: create a repository from the Chef's Pick OSS Starter template, or align an existing repository with it. Works with template 1.1.0 and later.
 
-[Unreleased]: https://github.com/chefs-pick-oss-starter/chefs-pick-oss-starter-skill/compare/v1.0.2...HEAD
+[Unreleased]: https://github.com/chefs-pick-oss-starter/chefs-pick-oss-starter-skill/compare/v1.0.3...HEAD
+[1.0.3]: https://github.com/chefs-pick-oss-starter/chefs-pick-oss-starter-skill/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/chefs-pick-oss-starter/chefs-pick-oss-starter-skill/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/chefs-pick-oss-starter/chefs-pick-oss-starter-skill/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/chefs-pick-oss-starter/chefs-pick-oss-starter-skill/releases/tag/v1.0.0
